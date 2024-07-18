@@ -7,7 +7,7 @@ app = Flask(__name__)
 OLLAMA_EMBEDDING_URL = 'http://localhost:11434/api/embeddings'
 
 # Specify the header name for authorization
-AUTH_HEADER_NAME = "Authorization"
+AUTH_HEADER_NAME = "apikey"
 
 @app.route('/api/embeddings', methods=['POST'])
 def proxy_request():
